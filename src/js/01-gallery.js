@@ -17,13 +17,11 @@ function createGalleryItem(galleryItems) {
     .join('');
 }
 
-//add items of img to HTML
 const gallery = document.querySelector('.gallery');
 const items = createGalleryItem(galleryItems);
 gallery.insertAdjacentHTML('beforeend', items);
 
 const lightbox = new SimpleLightbox('.gallery a', {
-  // captions: true,
   captionsData: 'alt',
   captionDelay: 250,
 });
